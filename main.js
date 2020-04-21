@@ -7,7 +7,7 @@ var num1 = Math.floor(Math.random() * 10) + 4; //numero elementi presenti nella 
 var num2 = Math.floor(Math.random() * 10) + 1; //lunghezza email_casuale
 var email_casuale = '';
 for (var i = 0; i < num1; i++) {
-    for (var i = 0; i < num2; i++) {
+    for (var j = 0; j < num2; j++) {
         email_casuale += lista_char[Math.floor(Math.random() * lista_char.length)];
     }
     email_casuale += '@email.com';
