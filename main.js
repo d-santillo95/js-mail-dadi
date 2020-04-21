@@ -17,3 +17,18 @@ if (assente) {  //'assente' resta 'true' solo se l'utente non è presente nella 
 }
 
 // "Gioco dei dadi" PC vs. Human: chiedi un numero all'utente tra 1 e 6 (giocata human) e estrai un numero casuale tra 1 e 6 (giocata PC). Chi fa il numero più alto vince!
+
+//creare numero pc e chiedere numero all'utente
+var num_pc = (Math.floor(Math.random() * 100) % 6) + 1;
+console.log(num_pc);
+var num_us = parseInt(prompt('inserisci un numero compreso tra 1 e 6'))
+//controllare il numero maggiore e visualizzare l'eesito
+if (num_us < 1 || num_us > 6 || isNaN(num_us)) {
+    console.log('hai barato')
+} else {
+    if (num_us < num_pc) {
+        console.log('hai perso');
+    } else {
+        console.log('hai vinto')
+    }
+}
